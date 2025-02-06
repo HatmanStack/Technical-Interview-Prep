@@ -1,5 +1,6 @@
 # Technical-Interview-Prep
 
+
 ## Languages
 ### Python 3
 - **Memory Management**: Uses automatic garbage collection, with reference counting and cyclic garbage collector.
@@ -18,6 +19,7 @@
 - **Collections**: Arrays, objects, and newer additions like `Map` and `Set`.
 - **Libraries and Frameworks**: Diverse ecosystem, with popular libraries like React, Angular, and libraries like Lodash for utility functions.
 - **Features**: Asynchronous programming is handled via callbacks, promises, and `async/await`. Prototypes are core to object inheritance.
+
 
 ## Data Structures
 ### Arrays
@@ -65,6 +67,7 @@
 - **Operations**: Insert O(log n), extract-min/max O(log n).
 - **Memory**: Typically an array, efficient in terms of storage.
 
+
 ## Algorithms
 ### Traversals
 - **Tree Traversals**: 
@@ -90,6 +93,7 @@
 - **BFS vs. DFS**: 
   - BFS finds the shortest path in unweighted graphs, but is memory-intensive; DFS is memory efficient and easier to implement recursively but doesn't guarantee shortest path without modifications (like iterative deepening).
 - **Divide and Conquer**: Generally efficient but may have overhead in dividing and combining stages, such as in merge sort.
+
 
 ## Design Patterns For Object-Oriented
 ### Object-Oriented Design Principles
@@ -121,6 +125,7 @@ When discussing your design choices:
 - **Scalability**: How does your design ensure performance will remain efficient as load and usage increase?
 - **Trade-Offs**: Be prepared to discuss potential downsides or trade-offs made in your design choices, such as increased complexity for extra functionality.
 
+
 ## Databases
 ### Relational Databases
 - **Structure**: Data is organized into tables with rows and columns, following a strict schema.
@@ -145,6 +150,7 @@ When discussing your design choices:
 - **Schema Flexibility**: Non-relational databases offer greater flexibility at the cost of enforced relationships and integrity constraints.
 - **Query Complexity**: Relational databases excel in complex queries due to SQL, while non-relational databases require more custom query handling.
 
+
 ## Row vs Columnar Data
 ### Row-Oriented Storage
 - **Design**: Stores all columns of a single row together.
@@ -164,6 +170,7 @@ When discussing your design choices:
 - **DFS (Depth-First Search)**:
   - **Similarity with Columnar Storage**: DFS is akin to drilling down a single path (or column) deeply before branching out, maximizing efficient retrieval of related nodes (or data points within a column).
   - **Trade-Off**: May miss contextual depth for full rows, akin to DFS missing breadth exploration initially, requiring backtracking or additional queries.
+
 
 ## Distributed Computing
 ### Service-Oriented Architectures (SOA)
@@ -191,30 +198,39 @@ When discussing your design choices:
 - **Consistency Models**: Understanding weak, strong, and eventual consistency to manage data integrity in distributed systems.
 - **Scalability**: Ability to handle growth by adding resources, either vertically (adding more power to the existing machines) or horizontally (adding more machines to the pool).
 
+
 ## OS Design
 ### Memory Management
-- **Concept**: The process of coordinating and handling computer memory, including allocating space to processes.
-- **Impact**: Efficient memory management helps avoid memory leaks and ensures optimal resource use.
-- **Techniques**: Includes dynamic allocation, garbage collection, and stack vs. heap management.
+- **Concept**: Memory management is the process of controlling and coordinating computer memory, assigning portions to various running programs to optimize overall system performance.
+- **Memory Leaks**: Occur when a program consumes memory without eventually freeing it, leading to reduced available memory over time.
+- **Dynamic Allocation**: Allocates memory at runtime as needed, allowing programs to use memory more flexibly.
+- **Garbage Collection**: An automatic memory recovery process that identifies and reclaims unused memory to prevent leaks.
+- **Stack vs. Heap Management**: Memory is divided into stack (for static memory allocation) and heap (for dynamic memory allocation); efficient management of these areas is crucial for applications.
 
 ### Processes and Threads
-- **Processes**: Independent programs executing in isolation, with their own memory space. Overheads include context switching and inter-process communication.
-- **Threads**: Lightweight units of a process that share the same memory space, allowing for more efficient execution and resource sharing.
-- **Impact**: Understanding when to use each affects performance and scalability.
+- **Processes**: Self-contained execution environments that include their own memory space; they represent individual programs in action on a computer.
+- **Context Switching**: The process of storing and restoring the state of a CPU so that process execution can be resumed from the same point at a later time; it's a key overhead in managing processes.
+- **Inter-process Communication (IPC)**: Mechanisms allowing processes to communicate and synchronize their actions when processes are isolated.
+- **Threads**: Smaller units of tasks that belong to a process; they operate within the same memory space and are therefore lighter and faster to switch between than processes.
 
 ### Synchronization
-- **Concept**: Coordination of concurrent processes or threads to avoid race conditions and ensure correct data manipulation.
-- **Mechanisms**: Include locks, mutexes, semaphores, and monitors.
-- **Impact**: Proper synchronization prevents deadlocks and ensures data consistency.
+- **Concept**: Synchronization involves managing access to shared resources between threads or processes to prevent simultaneous access that can lead to errors.
+- **Race Conditions**: Occur when multiple threads or processes attempt to change a shared resource concurrently, leading to unexpected behavior.
+- **Locks and Mutexes**: Tools to enforce exclusive access to a resource, ensuring only one thread can use it at a time.
+- **Semaphores**: Synchronization tools that control access based on counting, allowing multiple accesses up to a defined limit.
+- **Monitors**: High-level synchronization constructs that combine functionality of locks and condition variables.
 
 ### Paging
-- **Concept**: A memory management scheme that eliminates the need for contiguous allocation of physical memory.
-- **Impact**: Can improve memory utilization but at the cost of potential performance issues like page faults, which can lead to thrashing if not managed correctly.
+- **Concept**: Paging is a system where the computer's memory is divided into fixed-size pages, helping eliminate the need to allocate physical memory contiguously and optimizing memory use.
+- **Page Faults**: Occur when a program tries to access data not currently mapped to physical memory, causing a delay as the data is fetched from storage.
+- **Thrashing**: A condition where constant page faults significantly reduce system performance due to excessive paging activities.
 
 ### Multithreading
-- **Concept**: Running multiple threads simultaneously to perform concurrent operations within a single process.
-- **Benefits**: Can increase efficiency and responsiveness in applications, especially on multicore processors.
-- **Challenges**: Requires careful management of thread lifecycle and resources to avoid issues like thread contention and deadlocks.
+- **Concept**: Multithreading is running multiple threads in parallel within a process, enabling concurrent execution of tasks for performance gains.
+- **Efficiency and Responsiveness**: Threads can perform tasks independently and concurrently, making applications more efficient and responsive, especially on systems with multiple processors.
+- **Thread Contention**: Occurs when multiple threads attempt to use the same resource simultaneously, potentially leading to performance bottlenecks.
+- **Deadlocks**: Situations where two or more threads wait indefinitely for resources locked by each other, preventing further execution.
+
 
 ## Internet
 ### DNS (Domain Name System)
@@ -244,6 +260,7 @@ When discussing your design choices:
 - **Caching**: Web browsers cache resources to reduce load times on subsequent requests.
 - **Cookies**: Small pieces of data stored by the browser to track stateful information and sessions.
 
+
 ## Machine Learning
 ### Problem Formulation
 - **Define the Problem**: Translate the business objective into a machine learning task, such as classification, regression, clustering, or recommendation.
@@ -267,6 +284,34 @@ When discussing your design choices:
 - **Error Analysis**: Examine incorrectly predicted instances to gain insights into model weaknesses and data issues.
 - **Statistical Significance**: Validate if the observed performance improvements are statistically significant, using techniques like bootstrapping or hypothesis testing.
 
+
+## MicroService vs Monolith
+### Monolithic Architecture
+- **Design**: A single unified codebase where all modules are tightly coupled and executed as a single application.
+  
+#### Benefits:
+- **Simplicity**: Easier to develop and test, especially for smaller teams or projects.
+- **Performance**: Direct function calls within a single process can be faster compared to inter-service communication.
+- **Deployment**: Single deployment unit simplifies the deployment process.
+
+#### Trade-Offs:
+- **Scalability**: Difficult to scale specific components since the entire application must scale.
+- **Flexibility**: Slower to adopt new technologies as changes affect the entire application.
+- **Maintenance**: As the application grows, it can become complex and harder to manage.
+
+### Microservices Architecture
+- **Design**: Composed of small, independent services, each focused on a specific business function and able to be deployed individually.
+
+#### Benefits:
+- **Scalability**: Services can be scaled independently based on demand.
+- **Flexibility**: Allows the use of different technologies or languages for different services.
+- **Resilience**: Failures in one service don’t necessarily cascade to others, improving fault tolerance.
+- **Deployment**: Enables continuous delivery and rapid deployment of individual services.
+
+#### Trade-Offs:
+- **Complexity**: Managing a distributed system with numerous services can be complex.
+- **Communication Overhead**: Inter-service communication over the network can introduce latency and requires careful management.
+- **Data Consistency**: Maintaining consistency across services can be challenging.
 ### Potential Pitfalls
 - **Overfitting**: Ensure the model isn't too complex relative to the size of the data, using regularization or pruning techniques.
 - **Bias and Variance**: Balance bias and variance; high bias indicates underfitting, while high variance indicates overfitting.
