@@ -1,5 +1,15 @@
 # Technical-Interview-Prep
-
+- [Languages](#languages)
+- [Data Structures](#data)
+- [Algorithms](#algorithms)
+- [Design Patterns For Object-Oriented](@Design)
+- [Databases](#Databases)
+- [Row vs Columnar Data](#Row)
+- [Distributed Computing](#Distributed)
+- [OS Design](#OS)
+- [Internet](#Internet)
+- [Machine Learning](#Machine)
+- [MicroService vs Monolith](#MicroService)
 
 ## Languages
 ### Python 3
