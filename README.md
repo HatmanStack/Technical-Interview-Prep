@@ -31,7 +31,7 @@
 - **Collections**: Arrays, objects, and newer additions like `Map` and `Set`.
 - **Libraries and Frameworks**: Diverse ecosystem, with popular libraries like React, Angular, and libraries like Lodash for utility functions.
 - **Features**: Asynchronous programming is handled via callbacks, promises, and `async/await`. Prototypes are core to object inheritance.
-- [Top](#table-of-contents)
+<br></br> [Top](#table-of-contents)
 
 ## Data Structures
 ### Arrays
