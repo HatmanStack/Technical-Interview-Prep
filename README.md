@@ -31,7 +31,7 @@
 - **Collections**: Arrays, objects, and newer additions like `Map` and `Set`.
 - **Libraries and Frameworks**: Diverse ecosystem, with popular libraries like React, Angular, and libraries like Lodash for utility functions.
 - **Features**: Asynchronous programming is handled via callbacks, promises, and `async/await`. Prototypes are core to object inheritance.
-
+[Top](#table-of-contents)
 
 ## Data Structures
 ### Arrays
@@ -78,7 +78,7 @@
 - **Usage**: Priority queue implementation.
 - **Operations**: Insert O(log n), extract-min/max O(log n).
 - **Memory**: Typically an array, efficient in terms of storage.
-
+[Top](#table-of-contents)
 
 ## Algorithms
 ### Traversals
@@ -105,7 +105,7 @@
 - **BFS vs. DFS**: 
   - BFS finds the shortest path in unweighted graphs, but is memory-intensive; DFS is memory efficient and easier to implement recursively but doesn't guarantee shortest path without modifications (like iterative deepening).
 - **Divide and Conquer**: Generally efficient but may have overhead in dividing and combining stages, such as in merge sort.
-
+[Top](#table-of-contents)
 
 ## Design Patterns For Object-Oriented
 ### Object-Oriented Design Principles
@@ -136,7 +136,7 @@ When discussing your design choices:
 - **Highlight Maintainability**: How do the chosen patterns and principles reduce complexity and prevent potential bugs?
 - **Scalability**: How does your design ensure performance will remain efficient as load and usage increase?
 - **Trade-Offs**: Be prepared to discuss potential downsides or trade-offs made in your design choices, such as increased complexity for extra functionality.
-
+[Top](#table-of-contents)
 
 ## Databases
 ### Relational Databases
@@ -161,7 +161,7 @@ When discussing your design choices:
 - **Consistency vs. Availability vs. Partition Tolerance (CAP Theorem)**: Understanding this is crucial for choosing between different databases, as it dictates which properties are prioritized.
 - **Schema Flexibility**: Non-relational databases offer greater flexibility at the cost of enforced relationships and integrity constraints.
 - **Query Complexity**: Relational databases excel in complex queries due to SQL, while non-relational databases require more custom query handling.
-
+[Top](#table-of-contents)
 
 ## Row vs Columnar Data
 ### Row-Oriented Storage
@@ -182,7 +182,7 @@ When discussing your design choices:
 - **DFS (Depth-First Search)**:
   - **Similarity with Columnar Storage**: DFS is akin to drilling down a single path (or column) deeply before branching out, maximizing efficient retrieval of related nodes (or data points within a column).
   - **Trade-Off**: May miss contextual depth for full rows, akin to DFS missing breadth exploration initially, requiring backtracking or additional queries.
-
+[Top](#table-of-contents)
 
 ## Distributed Computing
 ### Service-Oriented Architectures (SOA)
@@ -209,7 +209,7 @@ When discussing your design choices:
 - **Fault Tolerance**: Designing systems to continue operating properly in the event of failures, through redundancy and replication.
 - **Consistency Models**: Understanding weak, strong, and eventual consistency to manage data integrity in distributed systems.
 - **Scalability**: Ability to handle growth by adding resources, either vertically (adding more power to the existing machines) or horizontally (adding more machines to the pool).
-
+[Top](#table-of-contents)
 
 ## OS Design
 ### Memory Management
@@ -242,7 +242,7 @@ When discussing your design choices:
 - **Efficiency and Responsiveness**: Threads can perform tasks independently and concurrently, making applications more efficient and responsive, especially on systems with multiple processors.
 - **Thread Contention**: Occurs when multiple threads attempt to use the same resource simultaneously, potentially leading to performance bottlenecks.
 - **Deadlocks**: Situations where two or more threads wait indefinitely for resources locked by each other, preventing further execution.
-
+[Top](#table-of-contents)
 
 ## Internet
 ### DNS (Domain Name System)
@@ -271,7 +271,7 @@ When discussing your design choices:
 ### Additional Concepts
 - **Caching**: Web browsers cache resources to reduce load times on subsequent requests.
 - **Cookies**: Small pieces of data stored by the browser to track stateful information and sessions.
-
+[Top](#table-of-contents)
 
 ## Machine Learning
 ### Problem Formulation
@@ -295,7 +295,7 @@ When discussing your design choices:
 - **Test Protocols**: Use cross-validation to assess model generalization.
 - **Error Analysis**: Examine incorrectly predicted instances to gain insights into model weaknesses and data issues.
 - **Statistical Significance**: Validate if the observed performance improvements are statistically significant, using techniques like bootstrapping or hypothesis testing.
-
+[Top](#table-of-contents)
 
 ## MicroService vs Monolith
 ### Monolithic Architecture
@@ -328,3 +328,4 @@ When discussing your design choices:
 - **Overfitting**: Ensure the model isn't too complex relative to the size of the data, using regularization or pruning techniques.
 - **Bias and Variance**: Balance bias and variance; high bias indicates underfitting, while high variance indicates overfitting.
 - **Data Leakage**: Ensure no information from the test set leaks into the training process, maintaining the integrity of evaluation.
+[Top](#table-of-contents)
