@@ -1,15 +1,17 @@
 # Technical-Interview-Prep
+
+## Table of Contents
 - [Languages](#languages)
-- [Data Structures](#data)
+- [Data Structures](#data-structures)
 - [Algorithms](#algorithms)
-- [Design Patterns For Object-Oriented](#Design Patterns For Object-Oriented)
+- [Design Patterns For Object-Oriented](#Design-Patterns-For-Object-Oriented)
 - [Databases](#Databases)
-- [Row vs Columnar Data](#Row vs Columnar Data)
-- [Distributed Computing](#Distributed)
-- [OS Design](#OS)
+- [Row vs Columnar Data](#Row-vs-Columnar-Data)
+- [Distributed Computing](#Distributed-Computing)
+- [OS Design](#OS-Design)
 - [Internet](#Internet)
-- [Machine Learning](#Machine)
-- [MicroService vs Monolith](#MicroService)
+- [Machine Learning](#Machine-Learning)
+- [MicroService vs Monolith](#MicroService-vs-Monolith)
 
 ## Languages
 ### Python 3
