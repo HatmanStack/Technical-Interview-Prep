@@ -158,9 +158,19 @@ When discussing your design choices:
 - **Graph Store**: Neo4j. Focuses on relationships and graphs, suitable for network and recommendation engines.
 
 ### Trade-Offs
-- **Consistency vs. Availability vs. Partition Tolerance (CAP Theorem)**: Understanding this is crucial for choosing between different databases, as it dictates which properties are prioritized.
-- **Schema Flexibility**: Non-relational databases offer greater flexibility at the cost of enforced relationships and integrity constraints.
-- **Query Complexity**: Relational databases excel in complex queries due to SQL, while non-relational databases require more custom query handling.
+
+- **Consistency vs. Availability vs. Partition Tolerance** (CAP Theorem):
+  - **Consistency**: Ensures every read receives the latest write (e.g., important for financial systems).
+  - **Availability**: Guarantees a response to every request, even if the data isn't the latest (e.g., social networks).
+  - **Partition Tolerance**: Operates despite network failures, crucial for distributed systems.
+
+- **Schema Flexibility**:
+  - **Relational Databases**: Offer rigidity with enforced relationships and data integrity, but changing schemas is complex.
+  - **Non-Relational Databases**: Provide flexibility for evolving data models by allowing unstructured data, sacrificing enforced constraints.
+
+- **Query Complexity**:
+  - **Relational Databases**: Excel in handling complex queries with SQL, offering robust query optimization.
+  - **Non-Relational Databases**: Require custom query solutions for complex operations, which might demand more development effort.
 <br> [Top](#table-of-contents)
 
 ## Row vs Columnar Data
@@ -295,6 +305,11 @@ When discussing your design choices:
 - **Test Protocols**: Use cross-validation to assess model generalization.
 - **Error Analysis**: Examine incorrectly predicted instances to gain insights into model weaknesses and data issues.
 - **Statistical Significance**: Validate if the observed performance improvements are statistically significant, using techniques like bootstrapping or hypothesis testing.
+
+### Potential Pitfalls
+- **Overfitting**: Ensure the model isn't too complex relative to the size of the data, using regularization or pruning techniques.
+- **Bias and Variance**: Balance bias and variance; high bias indicates underfitting, while high variance indicates overfitting.
+- **Data Leakage**: Ensure no information from the test set leaks into the training process, maintaining the integrity of evaluation.
 <br> [Top](#table-of-contents)
 
 ## MicroService vs Monolith
@@ -324,8 +339,4 @@ When discussing your design choices:
 - **Complexity**: Managing a distributed system with numerous services can be complex.
 - **Communication Overhead**: Inter-service communication over the network can introduce latency and requires careful management.
 - **Data Consistency**: Maintaining consistency across services can be challenging.
-### Potential Pitfalls
-- **Overfitting**: Ensure the model isn't too complex relative to the size of the data, using regularization or pruning techniques.
-- **Bias and Variance**: Balance bias and variance; high bias indicates underfitting, while high variance indicates overfitting.
-- **Data Leakage**: Ensure no information from the test set leaks into the training process, maintaining the integrity of evaluation.
 <br> [Top](#table-of-contents)
